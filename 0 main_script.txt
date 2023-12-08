@@ -1,0 +1,96 @@
+/***************************************************	
+**************************
+** Kaye is Learning SQL	**
+**			**
+**************************
+**********************************
+**				**
+** Author Dicle Ertan Ülger	**
+** e-mail dicle.ulger@gmail.com	**
+**				**
+**********************************
+**************************************************
+** Main Script if you are using an Oracle RDBMS	**
+**************************************************
+****
+**	This script creates and populates 
+** 	all the objects in the EU/EP Database. 
+**	
+**	Order of Scripts
+**	****************
+**	The order of execution below is important 
+**	due to FK relationships.
+**
+****	Initially a SCHEMA needs to be created 
+****	using the script cr_sample_user.
+**** 	Objects are then created under that schema.
+** 
+****
+****	Possibly there is no need to create 
+****	public synonyms anymore, but I am keeping 
+****	the code - for a future need.
+****	
+****
+****
+**************************************************
+** Please note that there is another script 	**
+** in GitHub, if you will use Google BigQuery,	**
+** as Google SQL is slightly different from	**
+** Oracle SQL.					**
+**************************************************
+** I also uploaded the CSV files of the table
+** data, if you want to create Google BigQuery	**
+** tables straight from the CSVs.		**
+**************************************************
+
+**************************************************/
+
+set echo on
+
+/* 1 */	bulk_create
+
+
+/* Populate tables in the schema. */
+/* 2 */	populate_eu_institutes
+/* 3 */	populate_countries
+/* 4 */	populate_political_groups
+/* 5 */	populate_committees
+/* 6 */	populate_delegations
+/* 7 */	populate_roles
+
+
+/*  Scripts below populate tables 
+	MEPS and MEP_COMM_DELG_ROLES
+*/
+/* 8 */	cr_meps_president
+/* 9 */	cr_meps_pg20
+/* 10 */cr_meps_pg40
+/* 11 */cr_meps_pg60
+/* 12 */cr_meps_pg80
+/* 13 */cr_meps_pg100
+/* 14 */cr_meps_pg140
+/* 15 */cr_meps_pg160
+/* 16 */cr_meps_NI
+
+/*  Scripts below populate table
+	MEP_PG_ROLES
+*/
+/* 17 */cr_meps_president_roles
+/* 18 */cr_meps_pg20_roles
+/* 19 */cr_meps_pg40_roles
+/* 20 */cr_meps_pg60_roles
+/* 21 */cr_meps_pg80_roles
+/* 22 */cr_meps_pg100_roles
+/* 23 */cr_meps_pg140_roles
+/* 24 */cr_meps_pg160_roles
+/* 25 */cr_meps_NI_roles
+
+/* COMMIT EVERYTHING YOU HAVE DONE */
+
+/* 26 */commit_work
+/* 27 */check_results
+/* 28 */cr_grant_sel_public_synonyms
+/* 29 */calc_meps_salary
+/* 30 */cal_meps_commission
+/* 31 */cr_table_ppp_levels
+

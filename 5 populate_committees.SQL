@@ -1,0 +1,411 @@
+--set echo on
+/*
+create table COMMITTEES
+(comm_id	number(10)
+		constraint comm_id_pk primary key
+,comm_code	varchar2(30)
+		constraint comm_code_nn not null
+,comm_type	varchar2(120)
+,comm_name	varchar2(240)
+,about		clob
+,contact_email	varchar(240)
+,institute_id	number(10)
+		constraint comm_institute_id_fk 
+		references EU_INSTITUTES(institute_id)
+);
+
+*/
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(10
+,'CLIM'
+,'COMM_TEMP'
+,'Climate Change'
+,'about'
+,'ip-CLIM@europarl.europa.eu'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(20
+,'DROI'
+,'COMM_SUB'
+,'Human Rights'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(30
+,'SEDE'
+,'COMM_SUB'
+,'Security and Defense'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(40
+,'AFET'
+,'COMM_PARL'
+,'Foreign Affairs'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(50
+,'DEVE'
+,'COMM_PARL'
+,'Development'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(60
+,'INTA'
+,'COMM_PARL'
+,'International Trade'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(70
+,'BUDG'
+,'COMM_PARL'
+,'Budgets'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(80
+,'CONT'
+,'COMM_PARL'
+,'Budgetary Control'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(90
+,'ECON'
+,'COMM_PARL'
+,'Economic and Monetary Affairs'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(100
+,'EMPL'
+,'COMM_PARL'
+,'Employment and Social Affairs'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(110
+,'ENVI'
+,'COMM_PARL'
+,'Environment, Public Health and Food Safety'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(120
+,'ITRE'
+,'COMM_PARL'
+,'Industry, Research and Energy'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(130
+,'IMCO'
+,'COMM_PARL'
+,'Internal Market and Consumer Protection'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(140
+,'TRAN'
+,'COMM_PARL'
+,'Transport and Tourism'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(150
+,'REGI'
+,'COMM_PARL'
+,'Regional Development'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(160
+,'AGRI'
+,'COMM_PARL'
+,'Agriculture and Rural Development'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(170
+,'PECH'
+,'COMM_PARL'
+,'Fisheries'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(180
+,'CULT'
+,'COMM_PARL'
+,'Culture and Education'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(190
+,'JURI'
+,'COMM_PARL'
+,'Legal Affairs'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(200
+,'LIBE'
+,'COMM_PARL'
+,'Civil Liberties, Justice and Home Affairs'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(210
+,'AFCO'
+,'COMM_PARL'
+,'Constitutional Affairs'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(220
+,'FEMM'
+,'COMM_PARL'
+,'Women''s Rights and Gender Equality'
+,'about'
+,'contact_email'
+,300);
+
+insert into COMMITTEES
+(comm_id	
+,comm_code	
+,comm_type	
+,comm_name	
+,about		
+,contact_email	
+,institute_id)
+values
+(230
+,'PETI'
+,'COMM_PARL'
+,'Petitions'
+,'about'
+,'contact_email'
+,300);
+
+commit;
+
