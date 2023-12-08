@@ -12,9 +12,13 @@ The “Sample Tables” data and the “Data Model” of this text are based on 
 The information I took the data from, is open to public and can be reached at the European Union websites below:
 
 https://europa.eu/european-union/index_en
+
 https://www.consilium.europa.eu/en/
+
 https://www.europarl.europa.eu/portal/en
+
 https://op.europa.eu/en/web/who-is-who
+
 
 I designed the Data Model which is in 3NF (Third Normal Form) using the information in these EU websites. I gathered data on the Political Groups, Members of the Parliament, Committees, Delegations, Countries of the MEPs, from the resources listed above.
 However, there is also some fictitious data which I mention at the beginning of each chapter.
