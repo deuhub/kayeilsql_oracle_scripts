@@ -1,6 +1,9 @@
 0 main_script.txt will guide you.
+
 our_er_model_ep.jpg is the ER Model for the European Parliament.
+
 #kayeilsql
+
 This unassuming work “Kaye is Learning SQL”, comprises of my notes on SQL, and teaches basic SQL. It is written in html and is free of charge, available in GitHub Pages. Although my starting point is; “let more girls/women/females have tech roles”, these notes of course 😊 can be of use to anyone who want to learn SQL.
 
 SQL which is short for Structured Query Language, is a data access and data processing language for relational databases. SQL has been around for nearly 50 years and it is the most widely used database language. Even today, SQL is used in Cloud technologies, Google Cloud Platform’s BigQuery is an example. 
